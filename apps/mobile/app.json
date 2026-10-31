@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "BorrowCircle",
+    "slug": "borrowcircle",
+    "version": "1.0.0",
+    "scheme": "borrowcircle",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#0D3B30",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.borrowcircle",
+      "infoPlist": {
+        "NSCameraUsageDescription": "BorrowCircle uses the camera to photograph an item's condition at handover and return.",
+        "NSPhotoLibraryUsageDescription": "BorrowCircle uses your photo library to add pictures to your listings and condition reports.",
+        "NSLocationWhenInUseUsageDescription": "BorrowCircle shows items near you. Your exact location is never shared \u2014 only your approximate area."
+      }
+    },
+    "android": {
+      "package": "com.borrowcircle",
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "ACCESS_COARSE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D3B30"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "BorrowCircle shows items near you. Your exact location is never shared."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "BorrowCircle uses the camera to document item condition at handover and return."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    },
+    "icon": "./assets/icon.png"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Discover, borrow, and lend useful items with nearby neighbors through a trusted community marketplace that makes sharing easy and sustainable.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
