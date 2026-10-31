@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+nodeLinker: hoisted
+overrides:
+  expo-linking: 8.0.12
+  expo-auth-session: 7.0.11
+  expo-constants: 18.0.14
+  expo-web-browser: 15.0.11
