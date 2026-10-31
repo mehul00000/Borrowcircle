@@ -1,0 +1,32 @@
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[[plugins]]
+origin = "default"
+package = "@netlify/plugin-nextjs"
+
+[plugins.inputs]
+
+[build]
+publish = "/opt/build/repo/.next"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "pnpm build"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
